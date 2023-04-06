@@ -1,4 +1,6 @@
 
+console.log(localStorage.getItem(92652352356))
+
 if(localStorage.getItem(92652352356) == null){
 	let gamestate = {
 		money : 0,
