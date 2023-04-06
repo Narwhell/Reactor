@@ -3,12 +3,12 @@ console.log(JSON.parse(localStorage.getItem(92652352356)))
 
 if(JSON.parse(localStorage.getItem(92652352356)) == null){
 	let gamestate = {
-		money : 0,
-		research : 0,
-		power : 0,
-		power_cap : 200,
-		total_time : 0,
-		powerPerSecond : 12,
+		var money : 0,
+		var research : 0,
+		var power : 0,
+		var power_cap : 200,
+		var total_time : 0,
+		var powerPerSecond : 12,
 	}
 	console.log("gamestate is null");
 	console.log(gamestate.power)
