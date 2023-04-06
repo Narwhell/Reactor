@@ -20,8 +20,9 @@ function save(gamestate){
 }
 
 function load() {
+	console.log("load attempt")
 	if (JSON.parse(localStorage.getItem(92652352356)) != null){
-		console.log("ass")
+		console.log("load success")
 		gamestate = JSON.parse(localStorage.getItem(92652352356));
 		updateGame(0, gamestate.total_time)
 		console.log("ass", gamestate.total_time)
