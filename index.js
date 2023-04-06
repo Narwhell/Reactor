@@ -1,5 +1,5 @@
 
-if(localStorage.getItem(1234) == null){
+if(localStorage.getItem(92652352356) == null){
 	let gamestate = {
 		money : 0,
 		research : 0,
@@ -13,14 +13,14 @@ if(localStorage.getItem(1234) == null){
 } else {load();}
 
 function save(gamestate){
-	localStorage.setItem(1234, JSON.stringify(gamestate));
+	localStorage.setItem(92652352356, JSON.stringify(gamestate));
 	console.log("boobs")
 }
 
 function load() {
-	if (localStorage.getItem(1234) != null){
+	if (localStorage.getItem(92652352356) != null){
 		console.log("ass")
-		gamestate = JSON.parse(localStorage.getItem(1234));
+		gamestate = JSON.parse(localStorage.getItem(92652352356));
 		updateGame(0, gamestate.total_time)
 		console.log("ass", gamestate.total_time)
 }}
