@@ -1,7 +1,7 @@
 
-console.log(localStorage.getItem(92652352356))
+console.log(JSON.parse(localStorage.getItem(92652352356)))
 
-if(localStorage.getItem(92652352356) == null){
+if(JSON.parse(localStorage.getItem(92652352356)) == null){
 	let gamestate = {
 		money : 0,
 		research : 0,
@@ -20,7 +20,7 @@ function save(gamestate){
 }
 
 function load() {
-	if (localStorage.getItem(92652352356) != null){
+	if (JSON.parse(localStorage.getItem(92652352356)) != null){
 		console.log("ass")
 		gamestate = JSON.parse(localStorage.getItem(92652352356));
 		updateGame(0, gamestate.total_time)
