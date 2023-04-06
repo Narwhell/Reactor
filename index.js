@@ -1,18 +1,21 @@
 
 console.log(JSON.parse(localStorage.getItem(92652352356)))
 
-if(JSON.parse(localStorage.getItem(92652352356)) == null){
-	let gamestate = {
+if(JSON.parse(localStorage.getItem(92652352356)) == null)
+{
+	let gamestate = 
+	{
 		var money : 0,
 		var research : 0,
 		var power : 0,
 		var power_cap : 200,
 		var total_time : 0,
 		var powerPerSecond : 12,
-	}
+	};
 	console.log("gamestate is null");
-	console.log(gamestate.power)
-} else {load();}
+	console.log(gamestate.power);
+} 
+else {load();}
 
 function save(gamestate){
 	localStorage.setItem(92652352356, JSON.stringify(gamestate));
