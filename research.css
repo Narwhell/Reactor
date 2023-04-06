@@ -1,0 +1,86 @@
+body {
+	background-image: url("background.jpg")
+}
+
+.title {
+	color:white;
+	padding: 5px;
+	font-family: Helvetica;
+	font-size: 0.75em
+}
+
+.readout {
+	background: black;
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+	border-radius: 10px;
+	float: left;
+	display: block;
+}
+
+.select {
+	background: black;
+	color: white;
+	border-width: 4px;
+	border-color: black;
+	width: 100px;
+	height: 50px;
+	font-size: 1em;
+	padding: 5px;
+	text-align: center;
+	border-radius: 10px;
+	margin-left: 5px;
+	float: left;
+}
+
+.currency {
+	padding: 3px;
+	color: gold;
+	font-size: 1em;
+}
+
+.production {
+	color: gold;
+	font-size: 0.75em
+}
+
+.research {
+	color: powderblue;
+}
+
+.researchProduction {
+	color: powderblue;
+	font-size: 0.75em
+}
+
+.power {
+	color: white;
+}
+
+.powerProduction {
+	color: white;
+	font-size: 0.75em
+}
+
+.menu {
+	height: 160px;
+}
+
+.informationBox {
+	height: 70px;
+	color: white;
+	background: black;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.menuBox {
+	height: 80px;
+}
+
+.powerbar {
+	height: 5px;
+	background: white;
+	border-radius: 5px;
+}
