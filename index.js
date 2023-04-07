@@ -13,12 +13,9 @@ if(JSON.parse(localStorage.getItem(92652352356)) == null)
 		powerPerSecond : 12,
 	};
 	console.log("gamestate was null");
-	console.log(gamestate);
+	localStorage.setItem(92652352356, JSON.stringify(gamestate));
 } 
-else 
-{
-	load();
-}
+load();
 console.log(gamestate)
 
 function save(gamestate){
