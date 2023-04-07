@@ -20,6 +20,7 @@ console.log(PlaceableTiles)
 
 for (var i = 0; i < PlaceableTiles.length; i++) {
     PlaceableTiles[i].addEventListener('click', interact());
+    console.log(`placeable tile ${i+1} added`)
 }
 
 function interact(){
