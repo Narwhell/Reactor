@@ -13,3 +13,7 @@ UpgradesTab.addEventListener("mouseout",function(){highlightOff(UpgradesTab);});
 SellButton.addEventListener("click",function(){sellPower();});
 SaveButton.addEventListener("click",function(){save(gamestate);});
 LoadButton.addEventListener("click",function(){load();});
+let SolarBuyer = document.getElementById("solar-panel")
+
+let PlaceableTiles = document.getElementsByClassName("placeable")
+console.log(PlaceableTiles)
