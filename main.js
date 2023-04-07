@@ -17,3 +17,11 @@ let SolarBuyer = document.getElementById("solar-panel")
 
 let PlaceableTiles = document.getElementsByClassName("placeable")
 console.log(PlaceableTiles)
+
+for (var i = 0; i < PlaceableTiles.length; i++) {
+    PlaceableTiles[i].addEventListener('click', interact());
+}
+
+function interact(){
+    console.log("Read interaction")  
+}
