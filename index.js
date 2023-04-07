@@ -77,5 +77,5 @@ function updatePowerbar(){
 function sellPower(){
 	gamestate.money += gamestate.power;
 	gamestate.power = 0;
-	console.log("hey")
+	console.log("power sold.")
 }
