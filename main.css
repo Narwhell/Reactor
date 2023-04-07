@@ -143,6 +143,10 @@ body {
 	float: left;
 }
 
+#solar-panel {
+	background-image: url(solarpanel.png)
+}
+
 .tile {
 	height: 25px;
 	width: 25px;
