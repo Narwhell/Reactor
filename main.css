@@ -156,7 +156,11 @@ body {
 }
 
 .grass {
-	background: forestgreen;	
+	background: forestgreen;
+	height: 25px;
+	width: 25px;
+	float: left;
+	display: block;
 }
 
 #sellButton {
