@@ -130,6 +130,15 @@ body {
 	display: block;
 }
 
+.component-select{
+	background: navy;
+	border-radius: 5px;
+	width: 25px;
+	height: 25px;
+	float: left;
+	display: block;
+}
+
 .tile {
 	height: 25px;
 	width: 25px;
