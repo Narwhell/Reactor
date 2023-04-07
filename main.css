@@ -136,6 +136,10 @@ body {
 	width: 25px;
 	height: 25px;
 	float: left;
+	margin: 5px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
 }
 
 .tile {
