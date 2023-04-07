@@ -20,7 +20,7 @@ console.log(gamestate)
 
 function save(gamestate){
 	localStorage.setItem(92652352356, JSON.stringify(gamestate));
-	console.log("boobs")
+	console.log("saved gamestate to localStorage")
 }
 
 function load() {
@@ -29,7 +29,7 @@ function load() {
 		console.log("load success")
 		gamestate = JSON.parse(localStorage.getItem(92652352356));
 		updateGame(0, gamestate.total_time)
-		console.log("ass", gamestate.total_time)
+		console.log("totaltime =", gamestate.total_time)
 }}
 
 function highlightOn(obj){
