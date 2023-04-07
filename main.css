@@ -140,6 +140,7 @@ body {
 	border-color: white;
 	color: white;
 	border-width: 2px;
+	float: left;
 }
 
 .tile {
