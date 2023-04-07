@@ -141,6 +141,10 @@ body {
 	background: powderblue;
 }
 
+.grass {
+	background: lawngreen;	
+}
+
 #sellButton {
 	background: gray;
 	width: 100px;
