@@ -79,8 +79,28 @@ body {
 	height: 80px;
 }
 
-.powerbar {
+#powerbar {
 	height: 5px;
+	margin: 5px;
 	background: white;
 	border-radius: 5px;
+}
+
+#powerbarFill {
+	height: 5px;
+	width: 1%;
+	background-color: yellow;
+}
+
+#sellButton {
+	background: gray;
+	width: 100px;
+	text-align: center;
+	color: white;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 20px;
+	height: 25px;
+	border-radius: 10px;
 }

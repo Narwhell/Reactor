@@ -63,6 +63,10 @@ body {
 	font-size: 0.75em
 }
 
+.maxpower{
+	color: white;
+}
+
 .menu {
 	height: 160px;
 }
@@ -77,6 +81,22 @@ body {
 
 .menuBox {
 	height: 80px;
+}
+
+.sidebar {
+	float: none;
+	background: black;
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+	width: 150px;
+	height: 300px;
+	margin-top: 5px;
+}
+
+.components {
+	font-size: 0.5em;
+	padding: 10px;
 }
 
 #powerbar {
