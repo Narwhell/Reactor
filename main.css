@@ -147,15 +147,12 @@ body {
 	background-image: url(solarpanel.png)
 }
 
-.tile {
+.water {
+	background: powderblue;
 	height: 25px;
 	width: 25px;
 	float: left;
 	display: block;
-}
-
-.water {
-	background: powderblue;
 }
 
 .grass {
