@@ -26,5 +26,5 @@ for (var i = 0; i < PlaceableTiles.length; i++) {
 
 function interact(tile){
     console.log("Read interaction")  
-    console.log(tile.data-pos)
+    console.log(tile)
 }
