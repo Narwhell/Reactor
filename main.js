@@ -60,4 +60,5 @@ function placeComponent(tile){
     tile.classList.add(purchase_state + "-component")
     tile.classList.add("occupied")
     console.log("added component")
+    placed_components[tile.dataset.pos] = tile
 }
