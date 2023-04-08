@@ -18,6 +18,8 @@ let SolarBuyer = document.getElementById("solar-panel")
 let PlaceableTiles = document.getElementsByClassName("placeable")
 console.log(PlaceableTiles)
 
+SolarBuyer.addEventListener("click",function(e){interact(e)})
+
 let thistilegrid = {}
 for (var i = 0; i < PlaceableTiles.length; i++) {
     thistilegrid[`thistile${i+1}`] = PlaceableTiles[i]
@@ -29,6 +31,10 @@ console.log(thistilegrid[`thistile${1}`])
 
 
 function interact(tile){
+    if (tile.classList.contains("component-select")){
+        console.log("read interaction with buyer")
+    }
+    else{
     console.log("Read interaction")  
     console.log(tile)
-}
+}}
