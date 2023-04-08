@@ -20,11 +20,13 @@ console.log(PlaceableTiles)
 
 let thistilegrid = {}
 for (var i = 0; i < PlaceableTiles.length; i++) {
-    thistilegrid[`thistile${i}`] = PlaceableTiles[i]
-    thistilegrid[`thistile${i}`].addEventListener('click', function(){interact(thistilegrid[`thistile${i}`])});
+    thistilegrid[`thistile${i+1}`] = PlaceableTiles[i]
+    thistilegrid[`thistile${i+1}`].addEventListener('click', function(){interact(thistilegrid[`thistile${i+1}`])});
     console.log(`placeable tile ${i+1} added`)
-    console.log(interact(thistilegrid[`thistile${i}`]))
 }
+console.log(thistilegrid)
+console.log(thistilegrid[thistile1])
+
 
 function interact(tile){
     console.log("Read interaction")  
