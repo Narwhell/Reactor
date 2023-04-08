@@ -25,7 +25,7 @@ for (var i = 0; i < PlaceableTiles.length; i++) {
     console.log(`placeable tile ${i+1} added`)
 }
 console.log(thistilegrid)
-console.log(thistilegrid[thistile1])
+console.log(thistilegrid[`thistile${1}`])
 
 
 function interact(tile){
