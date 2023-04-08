@@ -18,12 +18,12 @@ let SolarBuyer = document.getElementById("solar-panel")
 let PlaceableTiles = document.getElementsByClassName("placeable")
 console.log(PlaceableTiles)
 
-
+let thistilegrid = {}
 for (var i = 0; i < PlaceableTiles.length; i++) {
-    let thistilegrid = {}
     thistilegrid[`thistile${i}`] = PlaceableTiles[i]
     thistilegrid[`thistile${i}`].addEventListener('click', function(){interact(thistilegrid[`thistile${i}`])});
     console.log(`placeable tile ${i+1} added`)
+    console.log(interact(thistilegrid[`thistile${i}`])
 }
 
 function interact(tile){
