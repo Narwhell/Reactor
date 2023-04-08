@@ -42,6 +42,7 @@ function shopInteract(tile){
     }
     console.log("shop interaction logged")
     console.log(tile)
+    console.log(purchase_state)
 }
 
 function interact(tile){
