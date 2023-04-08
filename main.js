@@ -18,7 +18,7 @@ let SolarBuyer = document.getElementById("solar-panel")
 let PlaceableTiles = document.getElementsByClassName("placeable")
 console.log(PlaceableTiles)
 
-SolarBuyer.addEventListener("click",function(e){interact(e)})
+SolarBuyer.addEventListener("click",function(e){shopInteract(e)})
 
 let thistilegrid = {}
 for (var i = 0; i < PlaceableTiles.length; i++) {
@@ -29,12 +29,12 @@ for (var i = 0; i < PlaceableTiles.length; i++) {
 console.log(thistilegrid)
 console.log(thistilegrid[`thistile${1}`])
 
+function shopInteract(tile){
+    console.log("shop interaction logged")
+    console.log(tile)
+}
 
 function interact(tile){
-    if (tile.classList.contains("component-select")){
-        console.log("read interaction with buyer")
-    }
-    else{
     console.log("Read interaction")  
     console.log(tile)
-}}
+}
