@@ -135,6 +135,11 @@ body {
 }
 
 #solar-panel {
+	background-image: url(solarpanel.png);
+	background: red;
+}
+
+.solar-panel-component {
 	background-image: url(solarpanel.png)
 }
 
