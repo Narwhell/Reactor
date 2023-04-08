@@ -144,7 +144,7 @@ body {
 }
 
 .water {
-	background: powderblue;
+	background-color: powderblue;
 	height: 25px;
 	width: 25px;
 	float: left;
@@ -152,7 +152,7 @@ body {
 }
 
 .grass {
-	background: forestgreen;
+	background-color: forestgreen;
 	height: 25px;
 	width: 25px;
 	float: left;
