@@ -20,7 +20,7 @@ let purchase_state = "";
 let PlaceableTiles = document.getElementsByClassName("placeable")
 console.log(PlaceableTiles)
 
-SolarBuyer.addEventListener("click",function(e){shopInteract(e)})
+SolarBuyer.addEventListener("click",function(e){shopInteract(e); console.log(e)})
 
 let thistilegrid = {}
 for (var i = 0; i < PlaceableTiles.length; i++) {
@@ -32,8 +32,10 @@ console.log(thistilegrid)
 console.log(thistilegrid[`thistile${1}`])
 
 function shopInteract(tile){
-    if (purchase_state !== tile.id){
-        purchase_state = tile.id
+    let id = tile.id
+    console.log("tile id = " + id)
+    if (purchase_state !== id){
+        purchase_state = id
         console.log(`purchase state changed to ${purchase_state}`)
     }
     else if (purchase_state === tile.id){
