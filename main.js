@@ -49,13 +49,14 @@ function shopInteract(tile){
 
 function interact(tile){
     if (purchase_state !== ""){
-        console.log(`purchase of ${purchase_state} triggered for ${tile.target} `)   
+        console.log(`purchase of ${purchase_state} triggered for ${tile.target.classList} `)  
+        placeComponent(tile.target)
     }
     console.log("Read interaction")  
     console.log(tile)
 }
 
-function placeComponent(tile, purchase_state){
+function placeComponent(tile){
     tile.classList.add(purchase_state + "-component")
     tile.classList.add("occupied")
     console.log("added component")
