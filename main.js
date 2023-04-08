@@ -15,6 +15,8 @@ SaveButton.addEventListener("click",function(){save(gamestate);});
 LoadButton.addEventListener("click",function(){load();});
 let SolarBuyer = document.getElementById("solar-panel")
 
+let purchase_state = "";
+
 let PlaceableTiles = document.getElementsByClassName("placeable")
 console.log(PlaceableTiles)
 
@@ -30,11 +32,28 @@ console.log(thistilegrid)
 console.log(thistilegrid[`thistile${1}`])
 
 function shopInteract(tile){
+    if (purchase_state !== tile.id){
+        purchase_state = tile.getAttribute("id")
+        console.log(`purchase state changed to ${purchase_state}`)
+    }
+    if (purchase_state === tile.id){
+        purchase_state = ""
+        console.log("removed purchase state")
+    }
     console.log("shop interaction logged")
     console.log(tile)
 }
 
 function interact(tile){
+    if (purchase_state !== ""){
+        console.log(`purchase triggered for ${tile} `)   
+    }
     console.log("Read interaction")  
     console.log(tile)
+}
+
+function placeComponent(tile, purchase_state){
+    tile.classList.add("solar-panel")
+    tile.classList.add("occupied")
+    console.log("added component")
 }
