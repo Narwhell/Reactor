@@ -32,7 +32,7 @@ console.log(thistilegrid)
 console.log(thistilegrid[`thistile${1}`])
 
 function shopInteract(tile){
-    let id = tile[0].id
+    let id = tile.target.id
     console.log("tile id = " + id)
     if (purchase_state !== id){
         purchase_state = id
