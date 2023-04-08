@@ -33,7 +33,7 @@ console.log(thistilegrid[`thistile${1}`])
 
 function shopInteract(tile){
     if (purchase_state !== tile.id){
-        purchase_state = tile.getAttribute("id")
+        purchase_state = tile.id
         console.log(`purchase state changed to ${purchase_state}`)
     }
     if (purchase_state === tile.id){
