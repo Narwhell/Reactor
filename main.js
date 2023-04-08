@@ -36,7 +36,7 @@ function shopInteract(tile){
         purchase_state = tile.id
         console.log(`purchase state changed to ${purchase_state}`)
     }
-    if (purchase_state === tile.id){
+    else if (purchase_state === tile.id){
         purchase_state = ""
         console.log("removed purchase state")
     }
