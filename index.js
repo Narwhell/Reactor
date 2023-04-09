@@ -73,7 +73,7 @@ function highlightOff(obj){
 }
 
 function getTileByDataPos(pos){
-	tile = document.querySelectorAll('[data-pos=`${pos}`]');
+	tile = document.querySelectorAll('[data-pos=' + pos + ']');
 	console.log(tile)
 	return tile;
 }
