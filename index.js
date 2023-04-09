@@ -56,7 +56,7 @@ function loadPlaced(){
 
 function updatePlaced(){
 	console.log("attempt to update placed components")
-	object.keys(placed_components).forEach(function(pos){
+	Object.keys(placed_components).forEach(function(pos){
 		let toBePlaced = getTileByDataPos(pos)
 		toBePlaced = placed_components[pos]
 	})
