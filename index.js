@@ -81,10 +81,11 @@ function updatePlaced(){
 }
 
 function getTileByDataPos(pos){
-	tile = document.querySelector('[data-pos="' + pos + '"]');
-	console.log(tile)
-	return tile;
+  	let tile = document.querySelectorAll('[data-pos="' + pos + '"]');
+ 	console.log(tile.length);
+ 	return tile[0];
 }
+
 
 function highlightOn(obj){
 	obj.style = "background:grey";
