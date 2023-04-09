@@ -69,6 +69,8 @@ function updatePlaced(){
  		let toBePlaced = getTileByDataPos(pos)
     		if (toBePlaced) {
       			let newComponent = placed_components[pos]
+			console.log(newComponent);
+			console.log(typeof newComponent);
       			toBePlaced.parentNode.replaceChild(newComponent.cloneNode(true), toBePlaced)
     }
   })
