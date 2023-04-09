@@ -52,7 +52,7 @@ function loadPlaced(){
 		updatePlaced()
 }
 }
-
+/*
 function updatePlaced(){
 	console.log("attempt to update placed components")
 	Object.keys(placed_components).forEach(function(pos){
@@ -62,6 +62,24 @@ function updatePlaced(){
 					       
 	console.log("attempt completed")				   
 }
+*/
+function updatePlaced(){
+	console.log("attempt to update placed components")
+	Object.keys(placed_components).forEach(function(pos){
+ 		let toBePlaced = getTileByDataPos(pos)
+    		if (toBePlaced) {
+      			let newComponent = placed_components[pos]
+      			toBePlaced.parentNode.replaceChild(newComponent.cloneNode(true), toBePlaced)
+    }
+  })
+  console.log("attempt completed")
+}
+
+function getTileByDataPos(pos){
+	tile = document.querySelector('[data-pos="' + pos + '"]');
+	console.log(tile)
+	return tile;
+}
 
 function highlightOn(obj){
 	obj.style = "background:grey";
@@ -69,12 +87,6 @@ function highlightOn(obj){
 
 function highlightOff(obj){
 	obj.style = "background:black";
-}
-
-function getTileByDataPos(pos){
-	tile = document.querySelectorAll('[data-pos="' + pos + '"]');
-	console.log(tile)
-	return tile;
 }
 
 let last_time = null;
