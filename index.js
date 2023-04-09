@@ -82,7 +82,7 @@ function updatePlaced(){
 
 function getTileByDataPos(pos){
   	let tile = document.querySelectorAll('[data-pos="' + pos + '"]');
- 	console.log(tile.length);
+ 	console.log(tile[0]);
  	return tile[0];
 }
 
