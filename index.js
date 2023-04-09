@@ -59,7 +59,7 @@ function updatePlaced(){
 	object.keys(placed_components).forEach(function(pos){
 		let toBePlaced = getTileByDataPos(pos)
 		toBePlaced = placed_components[pos]
-	}
+	})
 					       
 	console.log("attempt completed")				   
 }
