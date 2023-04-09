@@ -20,7 +20,7 @@ console.log(JSON.parse(localStorage.getItem(24135614623)))
 if(JSON.parse(localStorage.getItem(24135614623)) == null)
 {
 	let placed_components = {
-		none: none;
+		none: none,
 	};
 	console.log("placed_objects was null")
 	localStorage.setItem(24135614623, JSON.stringify(placed_components));
