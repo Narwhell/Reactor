@@ -15,11 +15,23 @@ if(JSON.parse(localStorage.getItem(92652352356)) == null)
 	console.log("gamestate was null");
 	localStorage.setItem(92652352356, JSON.stringify(gamestate));
 } 
+console.log(JSON.parse(localStorage.getItem(24135614623)))
+
+if(JSON.parse(localStorage.getItem(24135614623)) == null)
+{
+	let placed_components = {
+		none: none;
+	};
+	console.log("placed_objects was null")
+	localStorage.setItem(24135614623, JSON.stringify(placed_components));
+}
 load();
+loadPlaced();
 console.log(gamestate)
 
 function save(gamestate){
-	localStorage.setItem(92652352356, JSON.stringify(gamestate));
+	localStorage.setItem(92652352356, JSON.stringify(gamestate))
+	localStorage.setItem(24135614623, JSON.stringify(placed_components))
 	console.log("saved gamestate to localStorage")
 }
 
@@ -30,7 +42,27 @@ function load() {
 		gamestate = JSON.parse(localStorage.getItem(92652352356));
 		updateGame(0, gamestate.total_time)
 		console.log("totaltime =", gamestate.total_time)
+		loadPlaced();
 }}
+
+function loadPlaced(){
+	console.log("loading placed - attempt")
+	if (JSON.parse(localStorage.getItem(24135614623)) != null){
+		console.log("load success")
+		placed_components = JSON.parse(localStorage.getItem(24135614623));
+		updatePlaced()
+}
+}
+
+function updatePlaced(){
+	console.log("attempt to update placed components")
+	object.keys(placed_components).forEach(function(pos){
+		let toBePlaced = getTileByDataPos(pos)
+		toBePlaced = placed_components[pos]
+	}
+					       
+	console.log("attempt completed")				   
+}
 
 function highlightOn(obj){
 	obj.style = "background:grey";
@@ -40,10 +72,10 @@ function highlightOff(obj){
 	obj.style = "background:black";
 }
 
-function getTile(){
-	tile = document.querySelectorAll('[data-pos="1_34"]');
-	tile.style = "background:blue";
+function getTileByDataPos(pos){
+	tile = document.querySelectorAll('[data-pos=${pos}]');
 	console.log(tile)
+	return tile;
 }
 
 let last_time = null;
