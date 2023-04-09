@@ -26,7 +26,6 @@ if(JSON.parse(localStorage.getItem(24135614623)) == null)
 	localStorage.setItem(24135614623, JSON.stringify(placed_components));
 }
 load();
-loadPlaced();
 console.log(gamestate)
 
 function save(gamestate){
@@ -73,7 +72,7 @@ function highlightOff(obj){
 }
 
 function getTileByDataPos(pos){
-	tile = document.querySelectorAll('[data-pos=' + pos + ']');
+	tile = document.querySelectorAll('[data-pos="' + pos + '"]');
 	console.log(tile)
 	return tile;
 }
