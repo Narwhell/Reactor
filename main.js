@@ -13,6 +13,7 @@ UpgradesTab.addEventListener("mouseout",function(){highlightOff(UpgradesTab);});
 SellButton.addEventListener("click",function(){sellPower();});
 SaveButton.addEventListener("click",function(){save(gamestate);});
 LoadButton.addEventListener("click",function(){load();});
+
 let SolarBuyer = document.getElementById("solar-panel")
 
 let purchase_state = "";
@@ -26,6 +27,11 @@ let thistilegrid = {}
 for (var i = 0; i < PlaceableTiles.length; i++) {
     thistilegrid[`thistile${i+1}`] = PlaceableTiles[i]
     thistilegrid[`thistile${i+1}`].addEventListener('click', function(e){interact(e)});
+    thistilegrid[`thistile${i+1}`].addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+        alert('success!');
+        return false;
+    }, false);
     console.log(`placeable tile ${i+1} added`)
 }
 console.log(thistilegrid)
