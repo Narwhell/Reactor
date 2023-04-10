@@ -29,7 +29,7 @@ for (var i = 0; i < PlaceableTiles.length; i++) {
     thistilegrid[`thistile${i+1}`].addEventListener('click', function(e){interact(e)});
     thistilegrid[`thistile${i+1}`].addEventListener('contextmenu', function(event) {
         event.preventDefault();
-        sellComponent(thistilegrid[`thistile${i+1}`].target)
+        sellComponent(thistilegrid[`thistile${i+1}`].target);
         return false;
     }, false);
     console.log(`placeable tile ${i+1} added`)
