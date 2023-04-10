@@ -81,10 +81,14 @@ function updatePlaced(){
 }
 
 function getTileByDataPos(pos){
-  	let tile = document.querySelectorAll('[data-pos="' + pos + '"]');
- 	console.log(tile);
- 	return tile;
+  let selector = '[data-pos="' + pos + '"]';
+  let tile = document.querySelectorAll(selector);
+  console.log('pos:', pos);
+  console.log('selector:', selector);
+  console.log('tile:', tile);
+  return tile;
 }
+
 
 
 function highlightOn(obj){
