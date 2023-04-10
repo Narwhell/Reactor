@@ -74,9 +74,9 @@ function updatePlaced(){
       			let newClassList = placed_components[pos]
 			console.log(newClassList);
 			console.log(typeof newClassList);
-      			newClassList.forEach(function(class){
-				console.log(toBePlaced, class)
-				toBePlaced.classlist.add(class)
+      			newClassList.forEach(function(t){
+				console.log(toBePlaced, t)
+				toBePlaced.classlist.add(t)
 			})
     }
   })
