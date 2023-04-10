@@ -63,6 +63,7 @@ function updatePlaced(){
 */
 function updatePlaced(){
 	console.log("attempt to update placed components")
+	console.log(placed_components)
 	if (placed_components != null){
 	Object.keys(placed_components).forEach(function(pos){
 		console.log(placed_components[pos]);
