@@ -74,10 +74,10 @@ function updatePlaced(){
 			console.log(newComponent);
 			console.log(typeof newComponent);
       			toBePlaced.parentNode.replaceChild(newComponent.cloneNode(true), toBePlaced)
-    }}
+    }
   })
   console.log("attempt completed")
-}
+}}
 
 function getTileByDataPos(pos){
   let selector = '[data-pos="' + pos + '"]';
