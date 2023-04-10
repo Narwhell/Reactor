@@ -76,7 +76,7 @@ function updatePlaced(){
 			console.log(typeof newClassList);
       			Object.values(newClassList).forEach(function(t){
 				console.log(toBePlaced, t)
-				toBePlaced.classlist.add(t)
+				toBePlaced.classList.add(t)
 			})
     }
   })
