@@ -62,6 +62,6 @@ function placeComponent(tile){
     console.log("added component")
     console.log(tile)
     console.log("Before:", placed_components)
-    placed_components[tile.dataset.pos] = tile
+    placed_components[tile.dataset.pos] = tile.classList
     console.log("After:", placed_components)
 }
