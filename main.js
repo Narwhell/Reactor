@@ -29,13 +29,25 @@ for (var i = 0; i < PlaceableTiles.length; i++) {
     thistilegrid[`thistile${i+1}`].addEventListener('click', function(e){interact(e)});
     thistilegrid[`thistile${i+1}`].addEventListener('contextmenu', function(event) {
         event.preventDefault();
-        alert('success!');
+        sellComponent(thistilegrid[`thistile${i+1}`].target)
         return false;
     }, false);
     console.log(`placeable tile ${i+1} added`)
 }
 console.log(thistilegrid)
 console.log(thistilegrid[`thistile${1}`])
+
+function sellComponent(tile){
+    if (tile.classList.contains(purchase_state + "-component")){
+    tile.classList.remove(purchase_state + "-component")
+    tile.classList.remove("occupied")
+    console.log("removed component")
+    }
+    console.log(tile)
+    console.log("Before:", placed_components)
+    placed_components[tile.dataset.pos] = tile.classList
+    console.log("After:", placed_components)
+}
 
 function shopInteract(tile){
     let id = tile.target.id
