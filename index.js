@@ -70,11 +70,14 @@ function updatePlaced(){
 		console.log(pos);
  		let toBePlaced = getTileByDataPos(pos)
 		console.log(toBePlaced);
-    		if (toBePlaced) {
-      			let newComponent = placed_components[pos]
-			console.log(newComponent);
-			console.log(typeof newComponent);
-      			toBePlaced.parentNode.replaceChild(newComponent.cloneNode(true), toBePlaced)
+    		if (toBePlaced != null) {
+      			let newClassList = placed_components[pos]
+			console.log(newClassList);
+			console.log(typeof newClassList);
+      			newClassList.forEach(function(class){
+				console.log(toBePlaced, class)
+				toBePlaced.classlist.add(class)
+			})
     }
   })
   console.log("attempt completed")
