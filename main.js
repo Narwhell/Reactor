@@ -27,9 +27,9 @@ let thistilegrid = {}
 for (var i = 0; i < PlaceableTiles.length; i++) {
     thistilegrid[`thistile${i+1}`] = PlaceableTiles[i]
     thistilegrid[`thistile${i+1}`].addEventListener('click', function(e){interact(e)});
-    thistilegrid[`thistile${i+1}`].addEventListener('contextmenu', function(event) {
+    thistilegrid[`thistile${i+1}`].addEventListener('contextmenu', function(event, element) {
         event.preventDefault();
-        sellComponent(thistilegrid[`thistile${i+1}`].target);
+        sellComponent(element.target);
         return false;
     }, false);
     console.log(`placeable tile ${i+1} added`)
