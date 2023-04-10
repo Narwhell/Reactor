@@ -19,9 +19,7 @@ console.log(JSON.parse(localStorage.getItem(24135614623)))
 
 if(JSON.parse(localStorage.getItem(24135614623)) == null)
 {
-	let placed_components = {
-		none: 0,
-	};
+	placed_components = {};
 	console.log("placed_objects was null")
 	localStorage.setItem(24135614623, JSON.stringify(placed_components));
 }
@@ -65,6 +63,7 @@ function updatePlaced(){
 */
 function updatePlaced(){
 	console.log("attempt to update placed components")
+	if (placed_components != null){
 	Object.keys(placed_components).forEach(function(pos){
 		console.log(placed_components[pos]);
 		console.log(pos);
@@ -75,7 +74,7 @@ function updatePlaced(){
 			console.log(newComponent);
 			console.log(typeof newComponent);
       			toBePlaced.parentNode.replaceChild(newComponent.cloneNode(true), toBePlaced)
-    }
+    }}
   })
   console.log("attempt completed")
 }
