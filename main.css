@@ -44,33 +44,40 @@ body {
 	padding: 3px;
 	color: gold;
 	font-size: 1em;
+	font-family: Arial
 }
 
 .production {
 	color: gold;
-	font-size: 0.75em
+	font-size: 0.75em;
+	font-family: Arial
 }
 
 .research {
 	color: powderblue;
+	font-family: Arial
 }
 
 .researchProduction {
 	color: powderblue;
-	font-size: 0.75em
+	font-size: 0.75em;
+	font-family: Arial
 }
 
 .power {
 	color: white;
+	font-family: Arial
 }
 
 .powerProduction {
 	color: white;
-	font-size: 0.75em
+	font-size: 0.75em;
+	font-family: Arial
 }
 
 .maxpower{
 	color: white;
+	font-family: Arial
 }
 
 .menu {
